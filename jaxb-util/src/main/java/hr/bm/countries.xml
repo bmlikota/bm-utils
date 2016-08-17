@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Country>
+	<Country_Name>USA</Country_Name>
+	<Country_Capital>Washington</Country_Capital>
+	<Country_Population>150120000</Country_Population>
+	<Country_Continent>America</Country_Continent>
+</Country>
