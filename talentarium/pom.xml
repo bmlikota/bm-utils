@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>hr.bm</groupId>
+		<artifactId>bm-utils</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>talentarium</artifactId>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<failOnError>false</failOnError>
+							<classifier>javadoc</classifier>
+							<doctitle>Sirius Integration API</doctitle>
+							<sourcepath>${project.basedir}/src/main/java</sourcepath>
+							<!-- <subpackages> -->
+							<!-- hr.bm.talentarium -->
+							<!-- </subpackages> -->
+							<!-- <sourceFileExcludes> -->
+							<!-- **\Zadatak4.java -->
+							<!-- </sourceFileExcludes> -->
+							<!-- <sourceFileIncludes> -->
+							<!-- <sourceFileInclude> -->
+							<!-- **\/\*.java -->
+							<!-- </sourceFileInclude> -->
+							<!-- </sourceFileIncludes> -->
+							<!-- <excludePackageNames>hr.pbz.sirius.integration.impl:hr.pbz.sirius.integration.handlers:hr.pbz.sirius.integration.helper:hr.pbz.sirius.integration.soap:hr.pbz.sirius.integration.util</excludePackageNames> -->
+							<outputDirectory>${project.build.directory}/apidocs</outputDirectory>
+							<reportOutputDirectory>${project.build.directory}/apidocs</reportOutputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

@@ -9,5 +9,6 @@
 		<module>apache-poi</module>
 		<module>yahoo-quotes</module>
 		<module>jaxb-util</module>
+		<module>talentarium</module>
 	</modules>
 </project>
