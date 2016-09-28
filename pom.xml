@@ -10,5 +10,6 @@
 		<module>yahoo-quotes</module>
 		<module>jaxb-util</module>
 		<module>talentarium</module>
+		<module>html-from-url-read</module>
 	</modules>
 </project>
