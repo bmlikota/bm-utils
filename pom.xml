@@ -11,5 +11,6 @@
 		<module>jaxb-util</module>
 		<module>talentarium</module>
 		<module>html-from-url-read</module>
+		<module>bm-report</module>
 	</modules>
 </project>
